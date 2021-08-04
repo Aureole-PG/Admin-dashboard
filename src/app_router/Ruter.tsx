@@ -1,8 +1,7 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom'
-import { AdminLayout } from './layout'
-import { Login } from './views/Login'
-
+import { AdminRoutes } from './AdminRoutes'
+import Login from '../views/Login'
 export const Router: React.FC = () => {
   return (
         <BrowserRouter>
@@ -12,29 +11,12 @@ export const Router: React.FC = () => {
                 </Route>
                 <Route path={'/admin'}>
                     <PrivateRouter>
-                        <Admin />
+                        <AdminRoutes />
                     </PrivateRouter>
                 </Route>
             </Switch>
         </BrowserRouter>
 
-  )
-}
-
-const Admin: React.FC = () => {
-  return (
-        <AdminLayout>
-            <Suspense fallback={<>UwU</>}>
-                <Switch>
-                    <Route path="/">
-                        <div>dashboard</div>
-                    </Route>
-                    <Route exact={true} path="/dates">
-                        <div>dates</div>
-                    </Route>
-                </Switch>
-            </Suspense>
-        </AdminLayout>
   )
 }
 

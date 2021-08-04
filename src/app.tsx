@@ -1,12 +1,11 @@
-import React,{useState} from "react";
+import React from 'react'
 
-import 'antd/dist/antd.css';
-import { Router } from "./Ruter";
+import 'antd/dist/antd.css'
+import { Router } from './app_router/Ruter'
 
-const App: React.FC= ()=>{
-
-    return(
+const App: React.FC = () => {
+  return (
         <Router/>
-    )
+  )
 }
-export default App;
+export default App
