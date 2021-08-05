@@ -1,0 +1,11 @@
+.access-form {
+  padding: 30px;
+}
+
+.cristal {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+}
+.gradient {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}

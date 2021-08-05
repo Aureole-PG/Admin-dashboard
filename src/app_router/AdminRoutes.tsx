@@ -6,7 +6,7 @@ export const AdminRoutes: React.FC = () => {
   const { url } = useRouteMatch()
   return (
     <AdminLayout url={url}>
-      <Suspense fallback={<>UwU</>}>
+      <Suspense fallback={<div>cargando </div>}>
         <Switch>
           {
             adminPaths.map((route, id) => (
