@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import { Layout, Menu } from 'antd'
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons'
+import { InboxOutlined, UserOutlined, HddOutlined, AreaChartOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 import './style.css'
 const { Header, Content, Sider } = Layout
@@ -30,23 +30,23 @@ const AdminLayout: React.FC<LayoutComponet> = ({ children, url }) => {
         </div>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
 
-            <Menu.Item key="1" icon={<UserOutlined />}>
+            <Menu.Item key="1" icon={<AreaChartOutlined />}>
               <Link to={`${url}`}>
                 Dashboard
               </Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+            <Menu.Item key="2" icon={<HddOutlined />}>
               <Link to={`${url}/inventory`}>
                 Inventary
               </Link>
             </Menu.Item>
-            <Menu.Item key="3" icon={<UploadOutlined />}>
-              <Link to={`${url}/users`}>
-                users
-              </Link>
+            <Menu.Item key="3" icon={<InboxOutlined />}>
+              <Link to={`${url}/items`}>Items</Link>
             </Menu.Item>
             <Menu.Item key="4" icon={<UserOutlined />}>
-              <Link to={`${url}/items`}>Items</Link>
+              <Link to={`${url}/user`}>
+                Acount
+              </Link>
             </Menu.Item>
         </Menu>
       </Sider>

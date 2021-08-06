@@ -1,10 +1,20 @@
 import React from 'react'
-
+import { Row, Col, Card } from 'antd'
 const Dashboard: React.FC = () => {
   return (
-        <div>
-            dashboard
-        </div>
+        <Row gutter={[16, 16]} >
+          <Col xs= {24} md={12} >
+            <Card style={{ width: '100%' }} title="Card title" bordered={false}>
+              Card content
+            </Card>
+          </Col>
+          <Col xs= {24} md={12} >
+            <Card style={{ width: '100%' }} title="Card title" bordered={false}>
+              Card content
+            </Card>
+          </Col>
+
+        </Row>
   )
 }
 

@@ -21,15 +21,15 @@ export const adminPaths: Paths[] = [
     component: lazy(() => import('../views/Inventory'))
   },
   {
-    path: 'users',
+    path: 'user',
     name: 'User',
     exact: false,
     component: lazy(() => import('../views/users'))
   },
   {
-    path: 'Item/:id',
+    path: 'inventory/item',
     name: 'Item',
     exact: false,
-    component: lazy(() => import('../views/Login'))
+    component: lazy(() => import('../views/Items'))
   }
 ]

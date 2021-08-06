@@ -11,8 +11,8 @@ const Login: React.FC = () => {
   }
 
   return (
-    <Row justify="center" align="middle" style={{ height: '100vh' }} className="gradient">
-      <Col>
+    <Row justify="center" align="middle" style={{ height: '100vh', width: '100vw' }} className="gradient">
+      <Col xs={20} sm={16} md={10} lg={8} xl={6} >
         <Card
           hoverable
           style={{ width: '100%' }}
@@ -43,11 +43,11 @@ const Login: React.FC = () => {
                 <Input.Password />
               </Form.Item>
 
-              <Form.Item name="remember" valuePropName="checked" wrapperCol={{ offset: 8, span: 16 }}>
+              <Form.Item name="remember" valuePropName="checked" >
                 <Checkbox>Remember me</Checkbox>
               </Form.Item>
 
-              <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+              <Form.Item >
                 <Button type="primary" htmlType="submit">
                   Submit
                 </Button>

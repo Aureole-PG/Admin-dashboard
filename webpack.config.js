@@ -51,15 +51,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html'
+      template: './public/index.html',
+      filename: 'index.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css'
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'build'),
-    compress: true,
+    // contentBase: path.join(__dirname, 'build'),
+    // compress: true,
     historyApiFallback: true,
     port: 3005,
     host: '192.168.100.10'

@@ -22,7 +22,8 @@ module.exports = {
   ],
   rules: {
     'no-use-before-define': 'off',
-    'react/prop-types': ['off']
+    'react/prop-types': ['off'],
+    'react/display-name': ['off']
   },
   settings: {
     react: {
