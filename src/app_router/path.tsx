@@ -17,19 +17,19 @@ export const adminPaths: Paths[] = [
   {
     path: 'inventory',
     name: 'Inventory',
-    exact: false,
+    exact: true,
     component: lazy(() => import('../views/Inventory'))
   },
   {
     path: 'user',
     name: 'User',
-    exact: false,
+    exact: true,
     component: lazy(() => import('../views/users'))
   },
   {
     path: 'inventory/item',
     name: 'Item',
-    exact: false,
+    exact: true,
     component: lazy(() => import('../views/Items'))
   }
 ]
